@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <h1>Rock Paper Scissors Game</h1>
+
+    <div id="showPlayer">Player: </div>
+
+    <div id="showComp">Computer: </div>
+
+    <div id="showResult"></div>
+
+    <div class="showScore">Wins:
+        <span id="showPlayerScore">0</span>
+    </div>
+
+    <div class="showScore">Losses:
+        <span id="showPlayerLoserScore">0</span>
+    </div>
+
+    <div class="showScore">Ties:
+        <span id="showPlayerTieScore">0</span>
+    </div>
+
+    <input type="reset" id="resetGame">
+
+    <form id="formId" onsubmit="playGame()">
+        <label for="playerChoice">Type in Rock, Paper, or Scissors</label>
+        <p id="text"></p>
+        <input type="text" id="inputPlayer" placeholder="Enter one of the options above">
+        <input type="submit" id="submitbtn">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

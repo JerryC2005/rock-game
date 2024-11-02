@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#showPlayer, #showComp {
+    font-size: 2rem;
+} 
+
+#showResult {
+    font-size: 5rem;
+    margin: 30px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+input {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    
+}
+#inputPlayer {
+    margin-bottom: 20px;
+}
+#resetGame {
+    margin-top: 10px;
+}
+
+.showScore {
+    font-size: 2.5rem;
+}
+
+.greenText, #showPlayerScore {
+    color: rgb(0, 255, 0);
+}
+.redText, #showPlayerLoserScore {
+    color: rgb(255, 0, 0);
+}
+
+/* resetbtn */
+#resetGame, #submitbtn {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#resetGame:hover {
+  background-color: #fff;
+}
+
+#resetGame:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+#submitbtn:hover {
+    background-color: #fff;
+}
+  
+#submitbtn:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+
+#inputPlayer {
+    border: 3px solid #000;
+    border-radius: 5px;
+    height: 50px;
+    line-height: normal;
+    color: #282828;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    user-select: auto;
+    font-size: 16px;
+    padding: 0 6px;
+    padding-left: 12px;
+
+}
+#inputPlayer:focus{
+    border: 3px solid #5551ff;
+}
+
+
+@media (min-width: 768px) {
+    #resetGame, #submitbtn {
+        min-width: 120px;
+        padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 980px){
+    body {
+        text-align: center;
+    }
+    
+}
